@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Content</title>
+    <link rel="icon" href="imgs/CR.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/CR.ico" type="image/x-icon">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="BeAlert/BeAlert.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="BeAlert/BeAlert.js"></script>
+</head>
+<body>
+    <div class="tag">
+        <a href="http://www.hfuu.edu.cn/ ">遇见合院 | 新生入学指南</a>
+    </div>
+    <div class="content">
+        <img data-lazy-src="imgs/content.jpg" alt="合院一景">
+    </div>
+    <fieldset class="layui-elem-field layui-field-title" >
+        <legend style="font-size: 30px">目&nbsp&nbsp&nbsp录</legend>
+    </fieldset>
+    <ul class="layui-timeline" style="margin: 30px;">
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">关于合院</h3>
+                    <img data-lazy-src="imgs/新生入学手册内容1.jpg" >
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">关于团委</h3>
+                <img data-lazy-src="imgs/新生入学手册内容2.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">南艳青年</h3>
+                <img data-lazy-src="imgs/新生入学手册内容3.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">合院掠影之风情一期</h3>
+                <img data-lazy-src="imgs/新生入学手册内容4.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">合院掠影之魅力二期</h3>
+                <img data-lazy-src="imgs/新生入学手册内容5.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">校园文化之活动篇</h3>
+                <img data-lazy-src="imgs/新手入学手册内容6.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">校园文化之书法篇</h3>
+                <img data-lazy-src="imgs/新生入学手册内容7.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">寝室温情展</h3>
+                <img data-lazy-src="imgs/新生入学手册内容8.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <h3 class="layui-timeline-title">新生问题汇总1</h3>
+                <img data-lazy-src="imgs/南青新生问题折页正面.jpg">
+            </div>
+        </li>
+        <li class="layui-timeline-item">
+            <i class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis"></i>
+            <div class="layui-timeline-content layui-text">
+                <div class="layui-timeline-title">新生问题汇总2</div>
+                <img data-lazy-src="imgs/南青新生问题折页背面.jpg">
+            </div>
+        </li>
+    </ul>`
+    <div class="callme" id="callme">
+        <p>点击下图联系作者哦^ w ^</p>
+        <a href="#"><img src="imgs/callme.gif" alt="哎呀，不小心走丢了"></a>
+    </div>
+    <script>
+        var btn = document.getElementById('callme');
+        btn.onclick=function () {
+            alert('OMG，联系方式走丢了');
+        }
+    </script>
+
+
+<!--引入layui插件-->
+<script src="layui/layui.js" charset="utf-8"></script>
+<!--引入懒加载插件-->
+<script src="js/EasyLazyload.min.js"></script>
+<script>
+    lazyLoadInit({
+        coverColor:"white",
+        coverDiv:"<h3>加载中</h3>",
+        offsetBottom:0,
+        offsetTopm:0,
+        showTime:1100,
+        onLoadBackEnd:function(i,e){
+            console.log("onLoadBackEnd:"+i);
+        }
+        ,onLoadBackStart:function(i,e){
+            console.log("onLoadBackStart:"+i);
+        }
+    });
+</script>
+</body>
+</html>

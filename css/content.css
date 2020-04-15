@@ -1,0 +1,44 @@
+/*全局默认样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    background-color: #ccc;
+}
+img{
+    border: 4px solid #eeeeee;
+    box-shadow: -2px 2px 3px rgba(0,0,0,.1);
+}
+.tag{
+    padding:20px 30px;
+    font-family: 楷体;
+    font-size: 20px;
+    text-align:right;
+}
+.content{
+    text-align:center;
+}
+ul img{
+    width:1024px;
+    height:700px;
+    align:center;
+}
+.callme{
+    position: fixed;
+    right:0px;
+    bottom:0px;
+
+}
+.callme img{
+    border: none;
+    box-shadow: none;
+    position: relative;
+    right:-35px;
+    width:80px;
+    height: 80px;
+}
